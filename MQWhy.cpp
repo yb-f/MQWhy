@@ -45,7 +45,8 @@ void WhyCommand(PSPAWNINFO pChar, PCHAR szLine)
 	
 	result.push_back(Punctuation[6]);
 
-	for (int digit : countStr) {
+	for (char ch : countStr) {
+		int digit = ch - '0';
 		result.push_back(Numbers[digit]);
 	}
 
@@ -106,7 +107,8 @@ void WhyCommand(PSPAWNINFO pChar, PCHAR szLine)
 	result.push_back(Punctuation[7]);
 	result.push_back(Punctuation[6]);
 
-	for (int digit : num1Str) {
+	for (char ch : num1Str) {
+		int digit = ch - '0';
 		result.push_back(Numbers[digit]);
 	}
 
@@ -115,7 +117,8 @@ void WhyCommand(PSPAWNINFO pChar, PCHAR szLine)
 	result.push_back(Punctuation[7]);
 	result.push_back(Punctuation[6]);
 
-	for (int digit : num2Str) {
+	for (char ch : num2Str) {
+		int digit = ch - '0';
 		result.push_back(Numbers[digit]);
 	}
 
@@ -126,7 +129,8 @@ void WhyCommand(PSPAWNINFO pChar, PCHAR szLine)
 	result.push_back(Punctuation[7]);
 	result.push_back(Punctuation[6]);
 
-	for (int digit : sumStr) {
+	for (char ch : sumStr) {
+		int digit = ch - '0';
 		result.push_back(Numbers[digit]);
 	}
 
@@ -134,14 +138,18 @@ void WhyCommand(PSPAWNINFO pChar, PCHAR szLine)
 	result.push_back(Letters[3]);
 	result.push_back(Letters[8]);
 	result.push_back(Letters[5]);
-	result.push_back(Letters[15]);
-	result.push_back(Letters[8]);
+	result.push_back(Letters[5]);
+	result.push_back(Letters[4]);
 	result.push_back(Letters[17]);
+	result.push_back(Letters[0]);
+	result.push_back(Letters[13]);
+	result.push_back(Letters[2]);
 	result.push_back(Letters[4]);
 	result.push_back(Punctuation[7]);
 	result.push_back(Punctuation[6]);
 
-	for (int digit : diffStr) {
+	for (char ch : diffStr) {
+		int digit = ch - '0';
 		result.push_back(Numbers[digit]);
 	}
 
@@ -149,14 +157,15 @@ void WhyCommand(PSPAWNINFO pChar, PCHAR szLine)
 	result.push_back(Letters[15]);
 	result.push_back(Letters[17]);
 	result.push_back(Letters[14]);
-	result.push_back(Letters[19]); 
+	result.push_back(Letters[3]); 
 	result.push_back(Letters[20]); 
-	result.push_back(Letters[15]);
+	result.push_back(Letters[2]);
 	result.push_back(Letters[19]);
 	result.push_back(Punctuation[7]);
 	result.push_back(Punctuation[6]);
 
-	for (int digit : prodStr) {
+	for (char ch : prodStr) {
+		int digit = ch - '0';
 		result.push_back(Numbers[digit]);
 	}
 
